@@ -91,6 +91,7 @@ syn match logXmlEntity       /&#\?\w\+;/
 
 " Levels
 "---------------------------------------------------------------------------
+syntax case ignore
 syn keyword logLevelEmergency EMERGENCY EMERG
 syn keyword logLevelAlert ALERT
 syn keyword logLevelCritical CRITICAL CRIT FATAL
@@ -100,6 +101,7 @@ syn keyword logLevelNotice NOTICE
 syn keyword logLevelInfo INFO
 syn keyword logLevelDebug DEBUG FINE
 syn keyword logLevelTrace TRACE FINER FINEST
+syntax case match
 
 
 " Highlight links
